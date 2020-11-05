@@ -10,11 +10,6 @@ namespace Foolproof
         public string DependentProperty { get; private set; }
         public string DependentPropertyDisplayName { get; set; }
 
-        static ContingentValidationAttribute()
-        {
-            Register.All();
-        }
-
         public ContingentValidationAttribute(string dependentProperty)
         {
             DependentProperty = dependentProperty;

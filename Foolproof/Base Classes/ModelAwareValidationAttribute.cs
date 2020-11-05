@@ -8,13 +8,6 @@ namespace Foolproof
     [AttributeUsage(AttributeTargets.Property)]
     public abstract class ModelAwareValidationAttribute : ValidationAttribute
     {
-        public ModelAwareValidationAttribute() { }
-        
-        static ModelAwareValidationAttribute()
-        {
-            Register.All();            
-        }
-
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             bool validate = IsValid(value, validationContext.ObjectInstance);
