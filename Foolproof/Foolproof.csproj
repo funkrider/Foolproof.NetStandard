@@ -2,10 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Foolproof.NetStandard</PackageId>
+    <Authors>Jason Heuclin</Authors>
+    <Company>Intelligenti Ltd.</Company>
+    <Product />
+    <Description>Migration to .Net Standard of the "MVC Foolproof Validation" library, for models consumed from both Core and .Net Framework applications. Subsequently, it omits MVC validation.</Description>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/jaytwo/Foolproof.NetStandard</PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageTags>Foolproof, Validation</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
